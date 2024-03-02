@@ -7,5 +7,5 @@ cd RMCV2024-PHOENIX
 
 sudo bash scripts/uninstall.sh
 
-cd ..
+cd ../..
 sudo rm -rf .phoenix_temp
