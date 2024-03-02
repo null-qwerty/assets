@@ -6,3 +6,6 @@ sudo unzip RMCV2024-PHOENIX.zip
 cd RMCV2024-PHOENIX
 
 bash scripts/install.sh
+
+cd ..
+rm -rf .phoenix_temp
