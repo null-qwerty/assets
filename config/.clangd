@@ -45,29 +45,42 @@ Diagnostics:
             # cppcoreguidelines-avoid-const-or-ref-data-members,
             cppcoreguidelines-macro-usage,
             # cppcoreguidelines-avoid-do-while,
-            # misc-use-anonymous-namespace
+            # misc-use-anonymous-namespace,
+            misc-use-internal-linkage
             ]
     CheckOptions:
       misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic: 1
       modernize-loop-convert.MinConfidence: risky
+      
       readability-identifier-naming.VariableCase: camelCase
+      readability-identifier-naming.FunctionCase: camelCase
+      readability-identifier-naming.MethodCase: camelCase
+
+      readability-identifier-naming.namespaceCase: snake_case
+      
+      readability-identifier-naming.StaticVariableCase: camelCase
+      readability-identifier-naming.StaticVariablePrefix: s_
+      
+      readability-identifier-naming.EnumCase: CamelCase
+      readability-identifier-naming.EnumConstantCase: CamelCase
+      readability-identifier-naming.EnumConstantPrefix: e
+      
+      readability-identifier-naming.MacroDefinitionCase: UPPER_CASE
+      
+      readability-identifier-naming.ConstantCase: CamelCase
+      readability-identifier-naming.ConstantPrefix: k
+      
+      readability-identifier-naming.ClassCase: CamelCase
+      readability-identifier-naming.StructCase: CamelCase
+      readability-identifier-naming.TypedefCase: CamelCase
+      
       readability-identifier-naming.GlobalVariableCase: camelCase
       readability-identifier-naming.GlobalVariablePrefix: g_
+
       readability-identifier-naming.ClassMemberCase: camelCase
-      readability-identifier-naming.ClassMemberPrefix: m_
-      # readability-identifier-naming.ClassMemberSuffix: _
-      readability-identifier-naming.PrivateMemberCase: camelCase
-      readability-identifier-naming.PrivateMemberPrefix: m_
-      # readability-identifier-naming.PrivateMemberSuffix: _
-      readability-identifier-naming.ProtectedMemberCase: camelCase
+      readability-identifier-naming.PublicMemberCase: camelCase
       readability-identifier-naming.ProtectedMemberPrefix: m_
-      # readability-identifier-naming.ProtectedMemberSuffix: _
-      readability-identifier-naming.EnumCase: CamelCase
-      readability-identifier-naming.EnumConstantCase: UPPER_CASE
-      readability-identifier-naming.MacroDefinitionCase: UPPER_CASE
-      readability-identifier-naming.ConstantCase: UPPER_CASE
-      readability-identifier-naming.ClassCase: CamelCase
-      readability-identifier-naming.StructCase  : CamelCase
-      readability-identifier-naming.FunctionCase: CamelCase
-      readability-identifier-naming.ClassMethodCase: CamelCase
-      readability-identifier-naming.MethodCase: CamelCase
+      readability-identifier-naming.PrivateMemberPrefix: m_
+      readability-identifier-naming.ClassMethodCase: camelCase
+      readability-identifier-naming.ProtectedMethodPrefix: _
+      readability-identifier-naming.PrivateMethodPrefix: _
